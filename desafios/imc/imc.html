@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="imc.css">
+</head>
+<body>
+    
+ <form class="shadow p-3 mb-5 rounded">
+        <h1>Cálculo IMC</h1>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Digite sua Altura</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="1.70">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Digite seu peso</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="70">
+        </div>
+      </form>
+
+      <button type="button" class="btn btn-secondary" id="verificar" onclick="verificar()">verificar</button>
+      <section>
+        <div id="Resultado"></div>
+    </section>
+    
+      
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+    function verificar(){
+        let altura = document.getElementById('formGroupExampleInput');
+        let peso = document.getElementById('formGroupExampleInput2');
+        let imc = peso.value / altura.value;
+        let div = document.getElementById('Resultado');
+        let comorbidade = ''
+
+         if (imc <= 25){
+            comorbidade = 'Desnutrição';
+        }else if(imc < 29.9){
+            comorbidade = 'Sobrepeso';
+        }else if (imc < 34.9){
+            comorbidade = 'Obesidade grau I';
+        }else if (imc < 39.9){
+            comorbidade = 'Obesidade grau II'
+        }else{
+            comorbidade = 'Obesidade grau III'
+        }
+        imc ? div.innerHTML = (`Seu imc é ${imc.toFixed(2)} ${comorbidade}`): window.alert('erro');
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body{
+    
+    margin: 200px 200px 200px 200px;
+    text-align: center;
+    display: inline;
+    
+    
+    
+}
+div.form-group{
+    margin: auto;
+    padding: 0px;
+    width: 250px;
+    height: 100px;
+}
+section{
+    font-size: 18pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    padding: 75px;
+}
+button#verificar{
+    display: flex;
+    margin: auto;
+}
+form{
+    
+    display: flexbox;
+    color: rgb(255, 255, 255);
+    background-color: rgba(105, 158, 255, 0.959);
+    margin: auto;
+    width: 400px;
+    height: 300px;
+}
+table.table{
+    color: rgb(255, 255, 255);
+    background-color: rgb(103, 103, 252);
+    margin: auto;
+    width: 400px;
+    height: 150px;
+}
+div#Resultado{
+    font-weight: bold;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    
+}

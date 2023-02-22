@@ -1,0 +1,54 @@
+form{
+    margin: auto;
+    width: 450px;
+    height: 350px;
+    padding: 50px;
+}
+
+div#resultado{
+    
+    margin: auto;
+    background-color: white;
+}
+
+section{
+    margin: auto;
+    background-color: rgba(248, 114, 114, 0.562);
+    width: 500px;
+    height: 450px;
+}
+div#bt{
+    margin: 0px 200px 0px 150px;
+    padding: 15px;
+}
+body{
+    background: linear-gradient(to right, #ff0000, #ff4141);
+
+
+
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+

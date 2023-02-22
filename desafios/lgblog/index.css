@@ -1,0 +1,101 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@1,900&family=Oswald:wght@700&family=Padyakke+Expanded+One&family=Roboto+Mono:wght@500&family=Sofia+Sans:ital,wght@1,400;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+:root{
+  --fonte-anton: 'Anton', sans-serif;
+  --fonte-destaque: 'Bebas Neue', cursive;
+  --fonte-crimson: 'Crimson Text', serif;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+}
+header{
+  margin: auto;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  font-family: var(--fonte-destaque);
+  color: rgb(255, 255, 255);
+  padding-top: 20px;
+  
+}
+header p{
+  font-size: 20pt;
+}
+img#foto{
+  height: 130px;
+}
+
+main{
+  margin: auto;
+  max-width: 900px;
+  max-height: 100%;
+  padding: 30px;
+  background-color: rgb(243, 60, 60);
+  margin-top: 20px;
+  
+  
+  
+}
+article{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+nav{
+  padding: 5px;
+  color: black;
+  text-align: center;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.301);
+  background-color: rgba(0, 0, 0, 0.966);
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: var(--fonte-destaque);
+  font-size: 18pt;
+  padding: 10px;
+  margin: auto;
+}
+
+nav a:hover{
+  background-color: rgb(252, 82, 82);
+  color: white;
+  
+}
+
+footer{
+  background-color: rgb(211, 77, 77);
+  color: rgb(255, 255, 255);
+  font-family: var(--fonte-destaque);
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13pt;
+}
+
+div#paramount{
+  max-width: 800px;
+  
+  margin: auto;
+  padding: 10px;
+  
+  
+}
+div#oledweek{
+  padding: 15px;
+  max-width: 100%;
+}
+article p{
+  text-align: justify;
+}
+
+div#paramount:hover{
+  opacity: 80%;
+  
+}

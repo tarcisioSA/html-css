@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1>Capitulo 1</h1>
+    <h2>Capitulo 1.1</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, 
+    illo illum. A modi nam sequi id perspiciatis rerum alias itaque impedit, 
+    placeat laboriosam reprehenderit cumque odit tempora est. Vel, cupiditate.</p>
+    <h1>Capitulo 2</h1>
+    <h2>Capitulo 2.1</h2>
+    <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+     Corporis cupiditate laborum recusandae mollitia sequi facilis
+     molestias suscipit quaerat libero maiores corrupti repudiandae
+       explicabo, in iure a porro voluptate esse voluptatibus?
+    </p>    
+    <section>
+        digite ano atual <input type="text" name="atual" id="atual"><br>
+        Digite ano de nascimento<input type="text" name="oi" id="oi"><br>
+        <input type="button" value="verificar" onclick="verificar()"><br>
+        <div id="res">
+
+        </div>
+    </section>
+    
+
+    <script>
+        function verificar(){
+            var atual = document.getElementById('atual')
+            var dig = document.getElementById('oi')
+            var res = document.getElementById('res')
+            var idade = atual.value - dig.value
+
+            res.innerHTML = (`${idade} Anos`)
+
+        }
+
+    </script>
+</body>
+</html>
