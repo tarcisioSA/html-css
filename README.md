@@ -3,4 +3,4 @@
 
  Estou apredendo a criar sites e gerenciando repositorios
 
- <a href="https://tarcisiosa.github.io/html-css/desafios/lgblog/index">LG o BLOG</a>
+ <a href="https://tarcisiosa.github.io/html-css/desafios/lgblog/index.html">LG o BLOG</a>
